@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0e0e0e;
+  --color-surface: #1e1e1e;
+  --color-surface-container-low: #262626;
+  --color-surface-container: #2c2c2c;
+  --color-surface-container-high: #333333;
+  --color-surface-container-highest: #3f3f3f;
+  
+  --color-primary: #85ffd6;
+  --color-primary-container: #06b77f;
+  --color-on-primary-container: #002919;
+  
+  --color-secondary: #8fdcff;
+  --color-tertiary: #fc4563;
+  --color-error: #ff716c;
+  
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #adaaaa;
+  --color-outline-variant: #494847;
+
+  --font-headline: "Epilogue", sans-serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+  --font-label: "Public Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body antialiased;
+  }
+}
+
+/* Hide scrollbar for horizontal lists */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
